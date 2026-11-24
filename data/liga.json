@@ -1,0 +1,1538 @@
+{
+ "source": "https://www.ligamas7.com/mod/soccer/situation.aspx?itm=15976",
+ "competition": "4ª División Guadalajara · Fútbol 7 · Liga A+7 · Temporada 2026",
+ "fetched": "2026-11-24",
+ "standings": [
+  {
+   "pos": 1,
+   "team": "TALENTO DE BARRIO FC",
+   "pj": 5,
+   "pg": 4,
+   "pe": 1,
+   "pp": 0,
+   "gf": 17,
+   "gc": 6,
+   "dg": 11,
+   "sn": 0,
+   "pts": 13
+  },
+  {
+   "pos": 2,
+   "team": "SIENAGA",
+   "pj": 5,
+   "pg": 3,
+   "pe": 1,
+   "pp": 1,
+   "gf": 14,
+   "gc": 8,
+   "dg": 6,
+   "sn": 0,
+   "pts": 10
+  },
+  {
+   "pos": 3,
+   "team": "PIAR FC",
+   "pj": 5,
+   "pg": 3,
+   "pe": 0,
+   "pp": 2,
+   "gf": 12,
+   "gc": 11,
+   "dg": 1,
+   "sn": 0,
+   "pts": 9
+  },
+  {
+   "pos": 4,
+   "team": "LEGION LATINA F.C.",
+   "pj": 5,
+   "pg": 3,
+   "pe": 0,
+   "pp": 2,
+   "gf": 19,
+   "gc": 15,
+   "dg": 4,
+   "sn": 0,
+   "pts": 9
+  },
+  {
+   "pos": 5,
+   "team": "CELTA DE VINO",
+   "pj": 5,
+   "pg": 2,
+   "pe": 1,
+   "pp": 2,
+   "gf": 13,
+   "gc": 8,
+   "dg": 5,
+   "sn": 0,
+   "pts": 7
+  },
+  {
+   "pos": 6,
+   "team": "NOTTINGHAM MIEDO FC",
+   "pj": 5,
+   "pg": 2,
+   "pe": 0,
+   "pp": 3,
+   "gf": 13,
+   "gc": 28,
+   "dg": -15,
+   "sn": 0,
+   "pts": 6
+  },
+  {
+   "pos": 7,
+   "team": "VILLANUEVA DE ALCORON",
+   "pj": 5,
+   "pg": 1,
+   "pe": 2,
+   "pp": 2,
+   "gf": 18,
+   "gc": 13,
+   "dg": 5,
+   "sn": 0,
+   "pts": 5
+  },
+  {
+   "pos": 8,
+   "team": "F.FUTBOL",
+   "pj": 5,
+   "pg": 1,
+   "pe": 2,
+   "pp": 2,
+   "gf": 15,
+   "gc": 18,
+   "dg": -3,
+   "sn": 0,
+   "pts": 5
+  },
+  {
+   "pos": 9,
+   "team": "LOS AVISPILLAS DE LA ALCARRIA",
+   "pj": 5,
+   "pg": 1,
+   "pe": 1,
+   "pp": 3,
+   "gf": 16,
+   "gc": 11,
+   "dg": 5,
+   "sn": 0,
+   "pts": 4
+  },
+  {
+   "pos": 10,
+   "team": "LA PONFENTANILA",
+   "pj": 5,
+   "pg": 1,
+   "pe": 0,
+   "pp": 4,
+   "gf": 11,
+   "gc": 30,
+   "dg": -19,
+   "sn": 0,
+   "pts": 3
+  }
+ ],
+ "matches": [
+  {
+   "jornada": 1,
+   "date": "2026-10-18",
+   "time": "16:00",
+   "field": "HO2",
+   "home": "F.FUTBOL",
+   "away": "CELTA DE VINO",
+   "hg": 4,
+   "ag": 2
+  },
+  {
+   "jornada": 1,
+   "date": "2026-10-18",
+   "time": "17:00",
+   "field": "HO2",
+   "home": "TALENTO DE BARRIO FC",
+   "away": "VILLANUEVA DE ALCORON",
+   "hg": 3,
+   "ag": 2
+  },
+  {
+   "jornada": 1,
+   "date": "2026-10-18",
+   "time": "18:00",
+   "field": "HO2",
+   "home": "LOS AVISPILLAS DE LA ALCARRIA",
+   "away": "SIENAGA",
+   "hg": 1,
+   "ag": 2
+  },
+  {
+   "jornada": 1,
+   "date": "2026-10-18",
+   "time": "19:00",
+   "field": "HO2",
+   "home": "LEGION LATINA F.C.",
+   "away": "PIAR FC",
+   "hg": 2,
+   "ag": 4
+  },
+  {
+   "jornada": 1,
+   "date": "2026-10-18",
+   "time": "20:00",
+   "field": "HO2",
+   "home": "NOTTINGHAM MIEDO FC",
+   "away": "LA PONFENTANILA",
+   "hg": 4,
+   "ag": 3
+  },
+  {
+   "jornada": 2,
+   "date": "2026-10-24",
+   "time": "16:15",
+   "field": "SA1",
+   "home": "LA PONFENTANILA",
+   "away": "LOS AVISPILLAS DE LA ALCARRIA",
+   "hg": 0,
+   "ag": 8
+  },
+  {
+   "jornada": 2,
+   "date": "2026-10-24",
+   "time": "17:15",
+   "field": "SA1",
+   "home": "CELTA DE VINO",
+   "away": "TALENTO DE BARRIO FC",
+   "hg": 1,
+   "ag": 1
+  },
+  {
+   "jornada": 2,
+   "date": "2026-10-25",
+   "time": "17:00",
+   "field": "DIO",
+   "home": "VILLANUEVA DE ALCORON",
+   "away": "NOTTINGHAM MIEDO FC",
+   "hg": 8,
+   "ag": 1
+  },
+  {
+   "jornada": 2,
+   "date": "2026-10-25",
+   "time": "18:00",
+   "field": "DIO",
+   "home": "SIENAGA",
+   "away": "LEGION LATINA F.C.",
+   "hg": 5,
+   "ag": 2
+  },
+  {
+   "jornada": 2,
+   "date": "2026-10-25",
+   "time": "19:00",
+   "field": "DIO",
+   "home": "PIAR FC",
+   "away": "F.FUTBOL",
+   "hg": 5,
+   "ag": 1
+  },
+  {
+   "jornada": 3,
+   "date": "2026-11-07",
+   "time": "17:15",
+   "field": "DIO",
+   "home": "LOS AVISPILLAS DE LA ALCARRIA",
+   "away": "VILLANUEVA DE ALCORON",
+   "hg": 4,
+   "ag": 4
+  },
+  {
+   "jornada": 3,
+   "date": "2026-11-07",
+   "time": "19:15",
+   "field": "DIO",
+   "home": "LEGION LATINA F.C.",
+   "away": "LA PONFENTANILA",
+   "hg": 6,
+   "ag": 2
+  },
+  {
+   "jornada": 3,
+   "date": "2026-11-08",
+   "time": "16:15",
+   "field": "DIO",
+   "home": "CELTA DE VINO",
+   "away": "PIAR FC",
+   "hg": 1,
+   "ag": 2
+  },
+  {
+   "jornada": 3,
+   "date": "2026-11-08",
+   "time": "17:00",
+   "field": "SA1",
+   "home": "TALENTO DE BARRIO FC",
+   "away": "NOTTINGHAM MIEDO FC",
+   "hg": 8,
+   "ag": 2
+  },
+  {
+   "jornada": 3,
+   "date": "2026-11-08",
+   "time": "18:15",
+   "field": "DIO",
+   "home": "F.FUTBOL",
+   "away": "SIENAGA",
+   "hg": 2,
+   "ag": 2
+  },
+  {
+   "jornada": 4,
+   "date": "2026-11-14",
+   "time": "17:15",
+   "field": "DI2",
+   "home": "NOTTINGHAM MIEDO FC",
+   "away": "LOS AVISPILLAS DE LA ALCARRIA",
+   "hg": 3,
+   "ag": 2
+  },
+  {
+   "jornada": 4,
+   "date": "2026-11-14",
+   "time": "18:15",
+   "field": "DIO",
+   "home": "PIAR FC",
+   "away": "TALENTO DE BARRIO FC",
+   "hg": 0,
+   "ag": 3
+  },
+  {
+   "jornada": 4,
+   "date": "2026-11-14",
+   "time": "18:15",
+   "field": "DI2",
+   "home": "LA PONFENTANILA",
+   "away": "F.FUTBOL",
+   "hg": 6,
+   "ag": 5
+  },
+  {
+   "jornada": 4,
+   "date": "2026-11-15",
+   "time": "17:30",
+   "field": "SA2",
+   "home": "VILLANUEVA DE ALCORON",
+   "away": "LEGION LATINA F.C.",
+   "hg": 1,
+   "ag": 2
+  },
+  {
+   "jornada": 4,
+   "date": "2026-11-15",
+   "time": "18:30",
+   "field": "SA2",
+   "home": "SIENAGA",
+   "away": "CELTA DE VINO",
+   "hg": 1,
+   "ag": 2
+  },
+  {
+   "jornada": 5,
+   "date": "2026-11-22",
+   "time": "16:00",
+   "field": "DIO",
+   "home": "CELTA DE VINO",
+   "away": "LA PONFENTANILA",
+   "hg": 7,
+   "ag": 0
+  },
+  {
+   "jornada": 5,
+   "date": "2026-11-22",
+   "time": "17:15",
+   "field": "DIO",
+   "home": "F.FUTBOL",
+   "away": "VILLANUEVA DE ALCORON",
+   "hg": 3,
+   "ag": 3
+  },
+  {
+   "jornada": 5,
+   "date": "2026-11-22",
+   "time": "18:30",
+   "field": "SA1",
+   "home": "LEGION LATINA F.C.",
+   "away": "NOTTINGHAM MIEDO FC",
+   "hg": 7,
+   "ag": 3
+  },
+  {
+   "jornada": 5,
+   "date": "2026-11-22",
+   "time": "18:30",
+   "field": "SA2",
+   "home": "PIAR FC",
+   "away": "SIENAGA",
+   "hg": 1,
+   "ag": 4
+  },
+  {
+   "jornada": 5,
+   "date": "2026-11-22",
+   "time": "19:30",
+   "field": "DIO",
+   "home": "TALENTO DE BARRIO FC",
+   "away": "LOS AVISPILLAS DE LA ALCARRIA",
+   "hg": 2,
+   "ag": 1
+  },
+  {
+   "jornada": 6,
+   "date": "2026-11-28",
+   "time": "16:00",
+   "field": "DIO",
+   "home": "LA PONFENTANILA",
+   "away": "PIAR FC",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 6,
+   "date": "2026-11-28",
+   "time": "17:00",
+   "field": "DIO",
+   "home": "NOTTINGHAM MIEDO FC",
+   "away": "F.FUTBOL",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 6,
+   "date": "2026-11-28",
+   "time": "18:00",
+   "field": "DIO",
+   "home": "LOS AVISPILLAS DE LA ALCARRIA",
+   "away": "LEGION LATINA F.C.",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 6,
+   "date": "2026-11-29",
+   "time": "18:15",
+   "field": "DIO",
+   "home": "SIENAGA",
+   "away": "TALENTO DE BARRIO FC",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 6,
+   "date": "2026-11-29",
+   "time": "19:15",
+   "field": "",
+   "home": "VILLANUEVA DE ALCORON",
+   "away": "CELTA DE VINO",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 7,
+   "date": "2026-12-12",
+   "time": "",
+   "field": "",
+   "home": "TALENTO DE BARRIO FC",
+   "away": "LEGION LATINA F.C.",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 7,
+   "date": "2026-12-12",
+   "time": "",
+   "field": "",
+   "home": "F.FUTBOL",
+   "away": "LOS AVISPILLAS DE LA ALCARRIA",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 7,
+   "date": "2026-12-12",
+   "time": "",
+   "field": "",
+   "home": "SIENAGA",
+   "away": "LA PONFENTANILA",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 7,
+   "date": "2026-12-12",
+   "time": "",
+   "field": "",
+   "home": "CELTA DE VINO",
+   "away": "NOTTINGHAM MIEDO FC",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 7,
+   "date": "2026-12-12",
+   "time": "",
+   "field": "",
+   "home": "PIAR FC",
+   "away": "VILLANUEVA DE ALCORON",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 8,
+   "date": "2026-12-19",
+   "time": "",
+   "field": "",
+   "home": "LEGION LATINA F.C.",
+   "away": "F.FUTBOL",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 8,
+   "date": "2026-12-19",
+   "time": "",
+   "field": "",
+   "home": "LOS AVISPILLAS DE LA ALCARRIA",
+   "away": "CELTA DE VINO",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 8,
+   "date": "2026-12-19",
+   "time": "",
+   "field": "",
+   "home": "VILLANUEVA DE ALCORON",
+   "away": "SIENAGA",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 8,
+   "date": "2026-12-19",
+   "time": "",
+   "field": "",
+   "home": "TALENTO DE BARRIO FC",
+   "away": "LA PONFENTANILA",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 8,
+   "date": "2026-12-19",
+   "time": "",
+   "field": "",
+   "home": "NOTTINGHAM MIEDO FC",
+   "away": "PIAR FC",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 9,
+   "date": "2027-01-16",
+   "time": "",
+   "field": "",
+   "home": "LA PONFENTANILA",
+   "away": "VILLANUEVA DE ALCORON",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 9,
+   "date": "2027-01-16",
+   "time": "",
+   "field": "",
+   "home": "CELTA DE VINO",
+   "away": "LEGION LATINA F.C.",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 9,
+   "date": "2027-01-16",
+   "time": "",
+   "field": "",
+   "home": "F.FUTBOL",
+   "away": "TALENTO DE BARRIO FC",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 9,
+   "date": "2027-01-16",
+   "time": "",
+   "field": "",
+   "home": "PIAR FC",
+   "away": "LOS AVISPILLAS DE LA ALCARRIA",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 9,
+   "date": "2027-01-16",
+   "time": "",
+   "field": "",
+   "home": "SIENAGA",
+   "away": "NOTTINGHAM MIEDO FC",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 10,
+   "date": "2027-01-23",
+   "time": "",
+   "field": "",
+   "home": "LA PONFENTANILA",
+   "away": "NOTTINGHAM MIEDO FC",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 10,
+   "date": "2027-01-23",
+   "time": "",
+   "field": "",
+   "home": "PIAR FC",
+   "away": "LEGION LATINA F.C.",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 10,
+   "date": "2027-01-23",
+   "time": "",
+   "field": "",
+   "home": "VILLANUEVA DE ALCORON",
+   "away": "TALENTO DE BARRIO FC",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 10,
+   "date": "2027-01-23",
+   "time": "",
+   "field": "",
+   "home": "CELTA DE VINO",
+   "away": "F.FUTBOL",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 10,
+   "date": "2027-01-23",
+   "time": "",
+   "field": "",
+   "home": "SIENAGA",
+   "away": "LOS AVISPILLAS DE LA ALCARRIA",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 11,
+   "date": "2027-01-30",
+   "time": "",
+   "field": "",
+   "home": "F.FUTBOL",
+   "away": "PIAR FC",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 11,
+   "date": "2027-01-30",
+   "time": "",
+   "field": "",
+   "home": "NOTTINGHAM MIEDO FC",
+   "away": "VILLANUEVA DE ALCORON",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 11,
+   "date": "2027-01-30",
+   "time": "",
+   "field": "",
+   "home": "LOS AVISPILLAS DE LA ALCARRIA",
+   "away": "LA PONFENTANILA",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 11,
+   "date": "2027-01-30",
+   "time": "",
+   "field": "",
+   "home": "LEGION LATINA F.C.",
+   "away": "SIENAGA",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 11,
+   "date": "2027-01-30",
+   "time": "",
+   "field": "",
+   "home": "TALENTO DE BARRIO FC",
+   "away": "CELTA DE VINO",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 12,
+   "date": "2027-02-13",
+   "time": "",
+   "field": "",
+   "home": "SIENAGA",
+   "away": "F.FUTBOL",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 12,
+   "date": "2027-02-13",
+   "time": "",
+   "field": "",
+   "home": "NOTTINGHAM MIEDO FC",
+   "away": "TALENTO DE BARRIO FC",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 12,
+   "date": "2027-02-13",
+   "time": "",
+   "field": "",
+   "home": "PIAR FC",
+   "away": "CELTA DE VINO",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 12,
+   "date": "2027-02-13",
+   "time": "",
+   "field": "",
+   "home": "VILLANUEVA DE ALCORON",
+   "away": "LOS AVISPILLAS DE LA ALCARRIA",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 12,
+   "date": "2027-02-13",
+   "time": "",
+   "field": "",
+   "home": "LA PONFENTANILA",
+   "away": "LEGION LATINA F.C.",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 13,
+   "date": "2027-02-20",
+   "time": "",
+   "field": "",
+   "home": "CELTA DE VINO",
+   "away": "SIENAGA",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 13,
+   "date": "2027-02-20",
+   "time": "",
+   "field": "",
+   "home": "F.FUTBOL",
+   "away": "LA PONFENTANILA",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 13,
+   "date": "2027-02-20",
+   "time": "",
+   "field": "",
+   "home": "LEGION LATINA F.C.",
+   "away": "VILLANUEVA DE ALCORON",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 13,
+   "date": "2027-02-20",
+   "time": "",
+   "field": "",
+   "home": "LOS AVISPILLAS DE LA ALCARRIA",
+   "away": "NOTTINGHAM MIEDO FC",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 13,
+   "date": "2027-02-20",
+   "time": "",
+   "field": "",
+   "home": "TALENTO DE BARRIO FC",
+   "away": "PIAR FC",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 14,
+   "date": "2027-02-27",
+   "time": "",
+   "field": "",
+   "home": "LA PONFENTANILA",
+   "away": "CELTA DE VINO",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 14,
+   "date": "2027-02-27",
+   "time": "",
+   "field": "",
+   "home": "NOTTINGHAM MIEDO FC",
+   "away": "LEGION LATINA F.C.",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 14,
+   "date": "2027-02-27",
+   "time": "",
+   "field": "",
+   "home": "SIENAGA",
+   "away": "PIAR FC",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 14,
+   "date": "2027-02-27",
+   "time": "",
+   "field": "",
+   "home": "LOS AVISPILLAS DE LA ALCARRIA",
+   "away": "TALENTO DE BARRIO FC",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 14,
+   "date": "2027-02-27",
+   "time": "",
+   "field": "",
+   "home": "VILLANUEVA DE ALCORON",
+   "away": "F.FUTBOL",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 15,
+   "date": "2027-03-06",
+   "time": "",
+   "field": "",
+   "home": "CELTA DE VINO",
+   "away": "VILLANUEVA DE ALCORON",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 15,
+   "date": "2027-03-06",
+   "time": "",
+   "field": "",
+   "home": "F.FUTBOL",
+   "away": "NOTTINGHAM MIEDO FC",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 15,
+   "date": "2027-03-06",
+   "time": "",
+   "field": "",
+   "home": "PIAR FC",
+   "away": "LA PONFENTANILA",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 15,
+   "date": "2027-03-06",
+   "time": "",
+   "field": "",
+   "home": "LEGION LATINA F.C.",
+   "away": "LOS AVISPILLAS DE LA ALCARRIA",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 15,
+   "date": "2027-03-06",
+   "time": "",
+   "field": "",
+   "home": "TALENTO DE BARRIO FC",
+   "away": "SIENAGA",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 16,
+   "date": "2027-03-13",
+   "time": "",
+   "field": "",
+   "home": "LOS AVISPILLAS DE LA ALCARRIA",
+   "away": "F.FUTBOL",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 16,
+   "date": "2027-03-13",
+   "time": "",
+   "field": "",
+   "home": "NOTTINGHAM MIEDO FC",
+   "away": "CELTA DE VINO",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 16,
+   "date": "2027-03-13",
+   "time": "",
+   "field": "",
+   "home": "VILLANUEVA DE ALCORON",
+   "away": "PIAR FC",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 16,
+   "date": "2027-03-13",
+   "time": "",
+   "field": "",
+   "home": "LEGION LATINA F.C.",
+   "away": "TALENTO DE BARRIO FC",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 16,
+   "date": "2027-03-13",
+   "time": "",
+   "field": "",
+   "home": "LA PONFENTANILA",
+   "away": "SIENAGA",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 17,
+   "date": "2027-04-03",
+   "time": "",
+   "field": "",
+   "home": "SIENAGA",
+   "away": "VILLANUEVA DE ALCORON",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 17,
+   "date": "2027-04-03",
+   "time": "",
+   "field": "",
+   "home": "CELTA DE VINO",
+   "away": "LOS AVISPILLAS DE LA ALCARRIA",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 17,
+   "date": "2027-04-03",
+   "time": "",
+   "field": "",
+   "home": "F.FUTBOL",
+   "away": "LEGION LATINA F.C.",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 17,
+   "date": "2027-04-03",
+   "time": "",
+   "field": "",
+   "home": "PIAR FC",
+   "away": "NOTTINGHAM MIEDO FC",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 17,
+   "date": "2027-04-03",
+   "time": "",
+   "field": "",
+   "home": "LA PONFENTANILA",
+   "away": "TALENTO DE BARRIO FC",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 18,
+   "date": "2027-04-10",
+   "time": "",
+   "field": "",
+   "home": "LEGION LATINA F.C.",
+   "away": "CELTA DE VINO",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 18,
+   "date": "2027-04-10",
+   "time": "",
+   "field": "",
+   "home": "LOS AVISPILLAS DE LA ALCARRIA",
+   "away": "PIAR FC",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 18,
+   "date": "2027-04-10",
+   "time": "",
+   "field": "",
+   "home": "NOTTINGHAM MIEDO FC",
+   "away": "SIENAGA",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 18,
+   "date": "2027-04-10",
+   "time": "",
+   "field": "",
+   "home": "VILLANUEVA DE ALCORON",
+   "away": "LA PONFENTANILA",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "jornada": 18,
+   "date": "2027-04-10",
+   "time": "",
+   "field": "",
+   "home": "TALENTO DE BARRIO FC",
+   "away": "F.FUTBOL",
+   "hg": null,
+   "ag": null
+  }
+ ],
+ "scorers": [
+  {
+   "rank": 1,
+   "name": "Rendy Andrei Biea",
+   "team": "LEGION LATINA F.C.",
+   "pj": 2,
+   "goals": 8
+  },
+  {
+   "rank": 2,
+   "name": "Fernando Mitsuo Febres Higa",
+   "team": "F.FUTBOL",
+   "pj": 4,
+   "goals": 6
+  },
+  {
+   "rank": 3,
+   "name": "Raul Martínez Jiménez",
+   "team": "LOS AVISPILLAS DE LA ALCARRIA",
+   "pj": 4,
+   "goals": 6
+  },
+  {
+   "rank": 4,
+   "name": "Victor Cristóbal Calvo",
+   "team": "VILLANUEVA DE ALCORON",
+   "pj": 4,
+   "goals": 5
+  },
+  {
+   "rank": 5,
+   "name": "Jose Hurtado Bugarin",
+   "team": "LA PONFENTANILA",
+   "pj": 1,
+   "goals": 4
+  },
+  {
+   "rank": 6,
+   "name": "Nelson Giraldo",
+   "team": "TALENTO DE BARRIO FC",
+   "pj": 3,
+   "goals": 4
+  },
+  {
+   "rank": 7,
+   "name": "Ivan Castillo Abad",
+   "team": "NOTTINGHAM MIEDO FC",
+   "pj": 4,
+   "goals": 4
+  },
+  {
+   "rank": 8,
+   "name": "Jeferson Andrey Espinal Bedoya",
+   "team": "TALENTO DE BARRIO FC",
+   "pj": 4,
+   "goals": 4
+  },
+  {
+   "rank": 9,
+   "name": "Victor Gómez Vázquez",
+   "team": "PIAR FC",
+   "pj": 5,
+   "goals": 4
+  },
+  {
+   "rank": 10,
+   "name": "Gabriel Mihaila Jiménez",
+   "team": "LA PONFENTANILA",
+   "pj": 2,
+   "goals": 3
+  },
+  {
+   "rank": 11,
+   "name": "José Alberto Baldominos Baldominos",
+   "team": "LA PONFENTANILA",
+   "pj": 2,
+   "goals": 3
+  },
+  {
+   "rank": 12,
+   "name": "Alberto Martinez Lopez",
+   "team": "NOTTINGHAM MIEDO FC",
+   "pj": 3,
+   "goals": 3
+  },
+  {
+   "rank": 13,
+   "name": "Jorge Montero de la Fuente",
+   "team": "NOTTINGHAM MIEDO FC",
+   "pj": 3,
+   "goals": 3
+  },
+  {
+   "rank": 14,
+   "name": "Juan José Pastor Rodriguez",
+   "team": "SIENAGA",
+   "pj": 3,
+   "goals": 3
+  },
+  {
+   "rank": 15,
+   "name": "Mario Manglano Redondo",
+   "team": "CELTA DE VINO",
+   "pj": 3,
+   "goals": 3
+  },
+  {
+   "rank": 16,
+   "name": "Sergio Fernández de la Llana",
+   "team": "VILLANUEVA DE ALCORON",
+   "pj": 3,
+   "goals": 3
+  },
+  {
+   "rank": 17,
+   "name": "Alonso Camarillo Blas",
+   "team": "F.FUTBOL",
+   "pj": 4,
+   "goals": 3
+  },
+  {
+   "rank": 18,
+   "name": "Álvaro González López",
+   "team": "SIENAGA",
+   "pj": 4,
+   "goals": 3
+  },
+  {
+   "rank": 19,
+   "name": "Jonaiker Oswaldo Bermudez Diaz",
+   "team": "TALENTO DE BARRIO FC",
+   "pj": 4,
+   "goals": 3
+  },
+  {
+   "rank": 20,
+   "name": "Pablo Herranz Martínez",
+   "team": "VILLANUEVA DE ALCORON",
+   "pj": 4,
+   "goals": 3
+  },
+  {
+   "rank": 21,
+   "name": "Amine Lamrabat Benkacem-ziani",
+   "team": "F.FUTBOL",
+   "pj": 1,
+   "goals": 2
+  },
+  {
+   "rank": 22,
+   "name": "Ezequiel Castro Solari",
+   "team": "CELTA DE VINO",
+   "pj": 1,
+   "goals": 2
+  },
+  {
+   "rank": 23,
+   "name": "Antonio Santiago Herreros Terol",
+   "team": "SIENAGA",
+   "pj": 2,
+   "goals": 2
+  },
+  {
+   "rank": 24,
+   "name": "Ivan Kleber Paucar Calzada",
+   "team": "LEGION LATINA F.C.",
+   "pj": 2,
+   "goals": 2
+  },
+  {
+   "rank": 25,
+   "name": "Pedro Gonzalez Lopez",
+   "team": "SIENAGA",
+   "pj": 2,
+   "goals": 2
+  },
+  {
+   "rank": 26,
+   "name": "Wilson Rodrigo Aguilar Pizarro",
+   "team": "SIENAGA",
+   "pj": 2,
+   "goals": 2
+  },
+  {
+   "rank": 27,
+   "name": "Camilo Villalo",
+   "team": "TALENTO DE BARRIO FC",
+   "pj": 3,
+   "goals": 2
+  },
+  {
+   "rank": 28,
+   "name": "Diego Romero Lopez",
+   "team": "CELTA DE VINO",
+   "pj": 3,
+   "goals": 2
+  },
+  {
+   "rank": 29,
+   "name": "Iván Avellano Pradillo",
+   "team": "CELTA DE VINO",
+   "pj": 3,
+   "goals": 2
+  },
+  {
+   "rank": 30,
+   "name": "Jonathan Cristopher Escobar de la Cruz",
+   "team": "LEGION LATINA F.C.",
+   "pj": 3,
+   "goals": 2
+  },
+  {
+   "rank": 31,
+   "name": "Pablo Manglano Redondo",
+   "team": "CELTA DE VINO",
+   "pj": 3,
+   "goals": 2
+  },
+  {
+   "rank": 32,
+   "name": "Alvaro Guerra Gomez",
+   "team": "LOS AVISPILLAS DE LA ALCARRIA",
+   "pj": 4,
+   "goals": 2
+  },
+  {
+   "rank": 33,
+   "name": "Álvaro Moratilla Cortes",
+   "team": "PIAR FC",
+   "pj": 4,
+   "goals": 2
+  },
+  {
+   "rank": 34,
+   "name": "Antonio Ramirez Perez",
+   "team": "LOS AVISPILLAS DE LA ALCARRIA",
+   "pj": 4,
+   "goals": 2
+  },
+  {
+   "rank": 35,
+   "name": "Esteban Fajardo Jurado",
+   "team": "LEGION LATINA F.C.",
+   "pj": 4,
+   "goals": 2
+  },
+  {
+   "rank": 36,
+   "name": "Iker Rubio García",
+   "team": "VILLANUEVA DE ALCORON",
+   "pj": 4,
+   "goals": 2
+  },
+  {
+   "rank": 37,
+   "name": "Jhon Fredy Acosta Rodrgiguez",
+   "team": "TALENTO DE BARRIO FC",
+   "pj": 4,
+   "goals": 2
+  },
+  {
+   "rank": 38,
+   "name": "Rachid Zagari Hazouza",
+   "team": "LEGION LATINA F.C.",
+   "pj": 4,
+   "goals": 2
+  },
+  {
+   "rank": 39,
+   "name": "David Mateo Calvo",
+   "team": "LOS AVISPILLAS DE LA ALCARRIA",
+   "pj": 1,
+   "goals": 1
+  },
+  {
+   "rank": 40,
+   "name": "Marcos González López",
+   "team": "SIENAGA",
+   "pj": 1,
+   "goals": 1
+  },
+  {
+   "rank": 41,
+   "name": "Cristian Rodriguez Jurado",
+   "team": "LEGION LATINA F.C.",
+   "pj": 2,
+   "goals": 1
+  },
+  {
+   "rank": 42,
+   "name": "Julian Lorenzo Lope",
+   "team": "LOS AVISPILLAS DE LA ALCARRIA",
+   "pj": 2,
+   "goals": 1
+  },
+  {
+   "rank": 43,
+   "name": "Ruben Gomez Rodriguez",
+   "team": "NOTTINGHAM MIEDO FC",
+   "pj": 2,
+   "goals": 1
+  },
+  {
+   "rank": 44,
+   "name": "Adrián Seguín Díaz",
+   "team": "CELTA DE VINO",
+   "pj": 3,
+   "goals": 1
+  },
+  {
+   "rank": 45,
+   "name": "Antonio Díaz Cano",
+   "team": "SIENAGA",
+   "pj": 3,
+   "goals": 1
+  },
+  {
+   "rank": 46,
+   "name": "Ayman El Ouahabi Darrazi",
+   "team": "TALENTO DE BARRIO FC",
+   "pj": 3,
+   "goals": 1
+  },
+  {
+   "rank": 47,
+   "name": "Fernando de la Roja Torrejón",
+   "team": "LOS AVISPILLAS DE LA ALCARRIA",
+   "pj": 3,
+   "goals": 1
+  },
+  {
+   "rank": 48,
+   "name": "Jesús Martínez Buiza",
+   "team": "LA PONFENTANILA",
+   "pj": 3,
+   "goals": 1
+  },
+  {
+   "rank": 49,
+   "name": "Junior Tacas Yupanqui",
+   "team": "LEGION LATINA F.C.",
+   "pj": 3,
+   "goals": 1
+  },
+  {
+   "rank": 50,
+   "name": "Luis Montero Delafuente",
+   "team": "NOTTINGHAM MIEDO FC",
+   "pj": 3,
+   "goals": 1
+  },
+  {
+   "rank": 51,
+   "name": "Miguel Curiel Pradillos",
+   "team": "NOTTINGHAM MIEDO FC",
+   "pj": 3,
+   "goals": 1
+  },
+  {
+   "rank": 52,
+   "name": "Nicolás Zamora Frutos",
+   "team": "CELTA DE VINO",
+   "pj": 3,
+   "goals": 1
+  },
+  {
+   "rank": 53,
+   "name": "Andrés Eduardo Uzcategui González",
+   "team": "LOS AVISPILLAS DE LA ALCARRIA",
+   "pj": 4,
+   "goals": 1
+  },
+  {
+   "rank": 54,
+   "name": "Daniel Gomez García",
+   "team": "F.FUTBOL",
+   "pj": 4,
+   "goals": 1
+  },
+  {
+   "rank": 55,
+   "name": "Eric Redondo Serrano",
+   "team": "F.FUTBOL",
+   "pj": 4,
+   "goals": 1
+  },
+  {
+   "rank": 56,
+   "name": "Israel García Pajas",
+   "team": "LOS AVISPILLAS DE LA ALCARRIA",
+   "pj": 4,
+   "goals": 1
+  },
+  {
+   "rank": 57,
+   "name": "Joaquín Sierra Yugueros",
+   "team": "LOS AVISPILLAS DE LA ALCARRIA",
+   "pj": 4,
+   "goals": 1
+  },
+  {
+   "rank": 58,
+   "name": "Juan Pablo Alvarez Galeano",
+   "team": "PIAR FC",
+   "pj": 4,
+   "goals": 1
+  },
+  {
+   "rank": 59,
+   "name": "Mateo Ocón Pérez",
+   "team": "PIAR FC",
+   "pj": 4,
+   "goals": 1
+  },
+  {
+   "rank": 60,
+   "name": "Miguel Ángel Regueiro Ladero",
+   "team": "VILLANUEVA DE ALCORON",
+   "pj": 4,
+   "goals": 1
+  },
+  {
+   "rank": 61,
+   "name": "Nicarte Ruiz Barrera",
+   "team": "LEGION LATINA F.C.",
+   "pj": 4,
+   "goals": 1
+  },
+  {
+   "rank": 62,
+   "name": "Pedro López Gimeno",
+   "team": "F.FUTBOL",
+   "pj": 4,
+   "goals": 1
+  },
+  {
+   "rank": 63,
+   "name": "Vicent Castro Mazo",
+   "team": "TALENTO DE BARRIO FC",
+   "pj": 4,
+   "goals": 1
+  },
+  {
+   "rank": 64,
+   "name": "Álvaro Aguado Minchillo",
+   "team": "PIAR FC",
+   "pj": 5,
+   "goals": 1
+  },
+  {
+   "rank": 65,
+   "name": "David Marco Arenas",
+   "team": "VILLANUEVA DE ALCORON",
+   "pj": 5,
+   "goals": 1
+  },
+  {
+   "rank": 66,
+   "name": "German Garcia Feo",
+   "team": "F.FUTBOL",
+   "pj": 5,
+   "goals": 1
+  },
+  {
+   "rank": 67,
+   "name": "Héctor Martínez Vicente",
+   "team": "VILLANUEVA DE ALCORON",
+   "pj": 5,
+   "goals": 1
+  },
+  {
+   "rank": 68,
+   "name": "Jesús Ángel Blasco Sanz",
+   "team": "PIAR FC",
+   "pj": 5,
+   "goals": 1
+  },
+  {
+   "rank": 69,
+   "name": "Marcos Pérez Llorente",
+   "team": "PIAR FC",
+   "pj": 5,
+   "goals": 1
+  },
+  {
+   "rank": 70,
+   "name": "Tian Duque Rey",
+   "team": "VILLANUEVA DE ALCORON",
+   "pj": 5,
+   "goals": 1
+  },
+  {
+   "rank": 71,
+   "name": "Victor Esteban Sastre",
+   "team": "VILLANUEVA DE ALCORON",
+   "pj": 5,
+   "goals": 1
+  }
+ ]
+}

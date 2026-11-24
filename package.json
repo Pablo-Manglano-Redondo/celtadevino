@@ -1,0 +1,11 @@
+{
+  "name": "celta-de-vino",
+  "private": true,
+  "scripts": {
+    "sync": "python3 -I tools/sync_liga.py && python3 -I tools/build.py",
+    "build": "python3 -I tools/build.py",
+    "dev": "wrangler pages dev public",
+    "deploy": "npm run sync && wrangler pages deploy public --project-name celtadevino"
+  },
+  "devDependencies": { "wrangler": "^4" }
+}

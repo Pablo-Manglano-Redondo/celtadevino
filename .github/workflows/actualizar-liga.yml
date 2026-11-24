@@ -1,0 +1,62 @@
+name: Actualizar liga y desplegar
+
+on:
+  schedule:
+    # La liga actualiza los martes. Se comprueba varias veces ese día (UTC) y un respaldo el miércoles.
+    - cron: "30 7,11,15,19,22 * * 2"
+    - cron: "30 8 * * 3"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Desplegar aunque no haya cambios en la liga"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: actualizar-liga
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Descargar clasificación, calendario y goleadores
+        run: python3 -I tools/sync_liga.py
+
+      - name: ¿Hay cambios?
+        id: diff
+        env:
+          FORCE: ${{ github.event.inputs.force }}
+        run: |
+          if git diff --quiet -- data/liga.json && [ "$FORCE" != "true" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "La liga no ha cambiado: no se despliega nada."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Regenerar la web
+        if: steps.diff.outputs.changed == 'true'
+        run: python3 -I tools/build.py
+
+      - name: Desplegar en Cloudflare Pages
+        if: steps.diff.outputs.changed == 'true'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx --yes wrangler@4 pages deploy public --project-name celtadevino --branch main --commit-dirty=true
+
+      - name: Guardar los datos nuevos en el repositorio
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/liga.json public/index.html
+          git commit -m "Actualiza datos de la liga ($(date -u +%F))" || echo "Nada que guardar"
+          git push
