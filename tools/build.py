@@ -303,12 +303,12 @@ stats = "".join(f"<div><dt>{k}</dt><dd>{v}</dd></div>" for k, v in
                 [("Puesto", f'{me["pos"]}º'), ("Puntos", me["pts"]), ("Jugados", me["pj"]), ("Ganados", G), ("Empates", E), ("Perdidos", P), ("Goles a favor", GF), ("Goles en contra", GC)])
 
 TITLE = "El Celta de Vino · Diario de un equipo de fútbol 7"
-DESC = "Diario oficial del Celta de Vino, equipo de fútbol 7 en la Liga +7: crónicas, clasificación, calendario, goleadores y fotos de cada jornada de la temporada 2026."
+DESC = "Diario oficial del Celta de Vino, equipo de fútbol 7 en la Liga A+7: crónicas, clasificación, calendario, goleadores y fotos de cada jornada de la temporada 2026."
 ld = {
     "@context": "https://schema.org", "@type": "SportsTeam", "name": "Celta de Vino", "sport": "Fútbol 7",
     "foundingDate": "2026", "logo": f"{SITE}/icon-512.png", "url": f"{SITE}/",
     "sameAs": ["https://www.instagram.com/celtadevino.2026"],
-    "memberOf": {"@type": "SportsOrganization", "name": "Liga +7"},
+    "memberOf": {"@type": "SportsOrganization", "name": "Liga A+7"},
 }
 
 page = f'''<!DOCTYPE html>
@@ -344,7 +344,7 @@ page = f'''<!DOCTYPE html>
 <a class="skip" href="#main">Saltar al contenido</a>
 <div class="w">
 <header>
-<div class="top"><span id="fecha">Edición digital</span><span>Temporada 2026 · Nº 1</span><span>Liga +7</span><button class="tt" id="tema" type="button" hidden>☾ Oscuro</button></div>
+<div class="top"><span id="fecha">Edición digital</span><span>Temporada 2026 · Nº 1</span><span>Liga A+7</span><button class="tt" id="tema" type="button" hidden>☾ Oscuro</button></div>
 <h1><a href="#top" id="top">El Celta de Vino</a></h1>
 <p class="sub">Diario oficial de un equipo recién nacido, con mucha sed de gloria</p>
 <div class="band" aria-hidden="true"></div>
@@ -362,7 +362,7 @@ page = f'''<!DOCTYPE html>
 <div class="cols dc">
 <p>Este año 2026 viene con novedad en los campos de fútbol 7: ha nacido el Celta de Vino. Un equipo que mezcla la pasión por los colores celestes con la sana costumbre de arreglar los partidos, y a veces las derrotas, alrededor de una buena copa.</p>
 <p>Con una cruz de Santiago burdeos, una corona dorada y una copa de tinto en el centro del escudo, el club deja claro desde su fundación que aquí se viene a competir, pero también a disfrutar del tercer tiempo.</p>
-<p>El equipo debuta en la Liga +7, donde se enfrentará a otros nueve conjuntos en una competición que promete emoción, sudor y alguna que otra discusión arbitral. Esta web recogerá, jornada a jornada, las crónicas de cada partido.</p>
+<p>El equipo debuta en la Liga A+7, donde se enfrentará a otros nueve conjuntos en una competición que promete emoción, sudor y alguna que otra discusión arbitral. Esta web recogerá, jornada a jornada, las crónicas de cada partido.</p>
 <p>Brindemos por la temporada: que la cosecha sea buena.</p>
 </div></div>
 <figure class="crest"><img src="/img/escudo.webp" width="420" height="515" alt="Escudo del Celta de Vino 2026: cruz de Santiago burdeos con corona dorada y una copa de tinto en el centro" decoding="async"><figcaption>Escudo oficial · Fundado en 2026</figcaption></figure>
@@ -373,7 +373,7 @@ page = f'''<!DOCTYPE html>
 <div><dt>Nombre</dt><dd>Celta de Vino</dd></div>
 <div><dt>Fundación</dt><dd>2026</dd></div>
 <div><dt>Modalidad</dt><dd>Fútbol 7</dd></div>
-<div><dt>Competición</dt><dd>Liga +7 · 10 equipos</dd></div>
+<div><dt>Competición</dt><dd>Liga A+7 · 10 equipos</dd></div>
 <div><dt>División</dt><dd>4ª Guadalajara</dd></div>
 <div><dt>Equipación local</dt><dd>{kit("h")} Azul y blanco</dd></div>
 <div><dt>Equipación visitante</dt><dd>{kit("a")} Negro y azul</dd></div>
