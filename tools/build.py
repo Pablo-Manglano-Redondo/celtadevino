@@ -244,7 +244,7 @@ def srcnote(extra=""):
 SEC_LIGA = f"""
 <section class="sec" id="clasificacion" aria-labelledby="h-clas"><h2 id="h-clas">Clasificación</h2>
 {tabla}
-{srcnote(" Los puntos son 3 por victoria, 1 por empate.")}
+{srcnote()}
 </section>
 
 <section class="sec" id="calendario" aria-labelledby="h-cal"><h2 id="h-cal">Calendario</h2>
@@ -279,7 +279,7 @@ SEC_HIMNO = f"""
 <div class="himno-txt">
 <div class="kick">Himno oficial · 2:43 · 17 de noviembre</div>
 <h3 class="hl">Domingos en el barro</h3>
-<p>El himno oficial del Celta de Vino, publicado en nuestro Instagram. Creado con Gemini, la inteligencia artificial de Google. Dale al play, sube el volumen y brinda.</p>
+<p>El himno oficial del Celta de Vino. Dale al play, sube el volumen y brinda.</p>
 <audio controls preload="none" src="/img/himno.m4a">Tu navegador no puede reproducir audio. <a href="/img/himno.m4a">Descarga el himno</a>.</audio>
 {letra}
 </div></div>
