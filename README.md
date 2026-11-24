@@ -18,7 +18,7 @@ Web estática de https://celtadevino.pages.dev. Lo que se sirve vive en `public/
   Requiere `npx wrangler login` con la cuenta de Cloudflare de Pablo Manglano.
 
 ## Actualización automática
-`.github/workflows/actualizar-liga.yml` se ejecuta **3 veces los martes y 1 vez el resto de días** (07:30 UTC; los martes también 13:30 y 19:30 UTC; ≈40 min/mes de Actions, que se facturan por minuto entero aunque no haya cambios):
+`.github/workflows/actualizar-liga.yml` se ejecuta **todos los días, 4 veces** (07:30, 12:30, 18:30 y 23:30 UTC; el repositorio es público, así que Actions es gratis):
 descarga la liga, y **solo si hay cambios** regenera la web, la despliega en Cloudflare Pages
 y guarda `data/liga.json` en el repositorio. Necesita los secretos `CLOUDFLARE_API_TOKEN` (permiso
 *Cloudflare Pages: Edit*) y `CLOUDFLARE_ACCOUNT_ID`. También se puede lanzar a mano desde la pestaña
