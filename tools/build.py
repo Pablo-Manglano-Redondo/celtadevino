@@ -262,6 +262,30 @@ SEC_LIGA = f"""
 </section>
 """
 
+
+# --- himno ---
+HIMNO = ROOT / "data" / "himno-letra.txt"
+letra = ""
+if HIMNO.exists():
+    stanzas = [t.strip() for t in HIMNO.read_text(encoding="utf-8").split("\n\n") if t.strip()]
+    letra = ('<details class="letra"><summary>Ver la letra</summary><div class="estrofas">'
+             + "".join("<p>" + "<br>".join(html.escape(l) for l in st.splitlines()) + "</p>" for st in stanzas)
+             + '</div><p class="aviso">Letra transcrita automáticamente a partir del audio; los [?] son pasajes que no se entienden bien.</p></details>')
+w, h = dims("himno-portada")
+SEC_HIMNO = f"""
+<section class="sec" id="himno" aria-labelledby="h-himno"><h2 id="h-himno">El himno</h2>
+<div class="himno">
+<figure class="disco"><img src="/img/himno-portada.webp" width="{w}" height="{h}" alt="Portada del himno «Domingos en el barro»: una bota de fútbol entre salpicaduras de vino tinto" loading="lazy" decoding="async"></figure>
+<div class="himno-txt">
+<div class="kick">Himno oficial · 2:43 · 17 de noviembre</div>
+<h3 class="hl">Domingos en el barro</h3>
+<p>El himno oficial del Celta de Vino, publicado en nuestro Instagram. Creado con Gemini, la inteligencia artificial de Google. Dale al play, sube el volumen y brinda.</p>
+<audio controls preload="none" src="/img/himno.m4a">Tu navegador no puede reproducir audio. <a href="/img/himno.m4a">Descarga el himno</a>.</audio>
+{letra}
+</div></div>
+</section>
+"""
+
 # --- forma / cifras ---
 CH = {m["n"] for m in M}  # jornadas con crónica
 form = ""
@@ -326,7 +350,7 @@ page = f'''<!DOCTYPE html>
 <div class="band" aria-hidden="true"></div>
 <hr class="rule">
 <nav class="nav" aria-label="Secciones">
-<a href="#presentacion">Presentación</a><a href="#ficha">Ficha</a><a href="#temporada">Temporada</a><a href="#clasificacion">Clasificación</a><a href="#calendario">Calendario</a><a href="#goleadores">Goleadores</a><a href="#cronicas">Crónicas</a><a href="#breves">Breves</a>
+<a href="#presentacion">Presentación</a><a href="#ficha">Ficha</a><a href="#himno">Himno</a><a href="#temporada">Temporada</a><a href="#clasificacion">Clasificación</a><a href="#calendario">Calendario</a><a href="#goleadores">Goleadores</a><a href="#cronicas">Crónicas</a><a href="#breves">Breves</a>
 </nav>
 </header>
 <main id="main">
@@ -359,6 +383,7 @@ page = f'''<!DOCTYPE html>
 <p class="more"><a href="{SRC}" target="_blank" rel="noopener">Consulta la competición completa en la web de la liga →</a></p>
 </section>
 
+{SEC_HIMNO}
 <section class="sec" id="temporada" aria-labelledby="h-temp"><h2 id="h-temp">La temporada en cifras</h2>
 <dl class="stats">{stats}</dl>
 {proximo}
@@ -374,7 +399,7 @@ page = f'''<!DOCTYPE html>
 {j2}
 {j1}
 </div>
-<div class="brev" id="breves"><b>Breves</b><br>El equipo ya tiene himno oficial: se publicó en su Instagram el 17 de noviembre. Balance tras {me["pj"]} {"jornada" if me["pj"] == 1 else "jornadas"}: {G} {"victoria" if G == 1 else "victorias"}, {E} {"empate" if E == 1 else "empates"} y {P} {"derrota" if P == 1 else "derrotas"} ({GF} goles a favor y {GC} en contra).</div>
+<div class="brev" id="breves"><b>Breves</b><br>El equipo ya tiene <a href="#himno">himno oficial</a>, «Domingos en el barro»: se publicó en su Instagram el 17 de noviembre. Balance tras {me["pj"]} {"jornada" if me["pj"] == 1 else "jornadas"}: {G} {"victoria" if G == 1 else "victorias"}, {E} {"empate" if E == 1 else "empates"} y {P} {"derrota" if P == 1 else "derrotas"} ({GF} goles a favor y {GC} en contra).</div>
 </section>
 
 </main>
