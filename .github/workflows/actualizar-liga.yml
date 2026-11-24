@@ -2,9 +2,9 @@ name: Actualizar liga y desplegar
 
 on:
   schedule:
-    # La liga actualiza los martes. Se comprueba varias veces ese día (UTC) y un respaldo el miércoles.
-    - cron: "30 7,11,15,19,22 * * 2"
-    - cron: "30 8 * * 3"
+    # Todos los días, 4 veces (horas UTC: 07:30, 12:30, 18:30 y 23:30; en España, 1 h más en invierno y 2 h en verano).
+    # Solo se despliega si los datos de la liga han cambiado.
+    - cron: "30 7,12,18,23 * * *"
   workflow_dispatch:
     inputs:
       force:
