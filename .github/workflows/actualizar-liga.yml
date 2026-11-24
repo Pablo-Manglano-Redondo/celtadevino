@@ -2,9 +2,11 @@ name: Actualizar liga y desplegar
 
 on:
   schedule:
-    # Todos los días, 4 veces (horas UTC: 07:30, 12:30, 18:30 y 23:30; en España, 1 h más en invierno y 2 h en verano).
-    # Solo se despliega si los datos de la liga han cambiado.
-    - cron: "30 7,12,18,23 * * *"
+    # GitHub factura cada ejecución redondeada a 1 minuto (aunque no haga nada), así que se reparten
+    # las pasadas para gastar ~40 min/mes: 3 los martes (día en que actualiza la liga) y 1 el resto.
+    # Horas en UTC (España: +1 h en invierno, +2 h en verano). Solo se despliega si cambian los datos.
+    - cron: "30 7,13,19 * * 2"
+    - cron: "30 7 * * 0,1,3,4,5,6"
   workflow_dispatch:
     inputs:
       force:
