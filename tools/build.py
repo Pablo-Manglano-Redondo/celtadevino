@@ -270,7 +270,7 @@ if HIMNO.exists():
     stanzas = [t.strip() for t in HIMNO.read_text(encoding="utf-8").split("\n\n") if t.strip()]
     letra = ('<details class="letra"><summary>Ver la letra</summary><div class="estrofas">'
              + "".join("<p>" + "<br>".join(html.escape(l) for l in st.splitlines()) + "</p>" for st in stanzas)
-             + '</div><p class="aviso">Letra transcrita automáticamente (voz aislada y varias pasadas de Whisper). Lo marcado con (?) es la interpretación más probable y [?] es un pasaje que no se entiende.</p></details>')
+             + '</div></details>')
 w, h = dims("himno-portada")
 SEC_HIMNO = f"""
 <section class="sec" id="himno" aria-labelledby="h-himno"><h2 id="h-himno">El himno</h2>
