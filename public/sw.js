@@ -4,12 +4,12 @@
 // - Imágenes e iconos: la copia guardada al instante y se actualiza en segundo plano.
 // - Vídeo y audio (peticiones por rangos) y otros orígenes: no se tocan.
 // Al cambiar la lista de PRECACHE o la estrategia, sube VERSION para limpiar las cachés antiguas.
-const VERSION = "v1";
+const VERSION = "v2";
 const SHELL = "cdv-shell-" + VERSION;
 const IMG = "cdv-img-" + VERSION;
 const OFFLINE = "/offline";
 const PRECACHE = [
-  "/", OFFLINE, "/style.css", "/theme.js", "/app.js", "/pwa.js", "/manifest.webmanifest",
+  "/", OFFLINE, "/style.css", "/theme.js", "/app.js", "/goleadores.js", "/pwa.js", "/manifest.webmanifest",
   "/favicon.ico", "/icon-192.png", "/img/escudo.webp",
 ];
 

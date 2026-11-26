@@ -9,6 +9,10 @@ Web estática de https://celtadevino.pages.dev. Lo que se sirve vive en `public/
   del propio script) y los datos de `data/liga.json`. Comprueba que las crónicas cuadran con la
   clasificación oficial (G/E/P y goles) y que los goleadores del Celta suman sus goles.
 - `public/` (CSS, JS, imágenes, `_headers`…) es estático; no hay build de frontend.
+- Broma de los goleadores (`public/goleadores.js`): en la tabla, los nombres de Diego y Mario se pueden pulsar;
+  cada pulsación les suma un gol a los dos y se lo quita a Pablo (nunca por debajo de 0), reordena las tablas y
+  muestra «¡Pablo ladrón!». Solo pasa en el navegador de quien la visita y se reinicia al recargar. Los nombres
+  están en `BROMA` dentro de `build.py`, que mete los datos en la página; si alguno deja de aparecer, avisa y la desactiva.
 
 ## App instalable (PWA)
 La web se puede instalar en el móvil y en el escritorio ("Añadir a pantalla de inicio" / "Instalar").
