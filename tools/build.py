@@ -240,8 +240,8 @@ mine_tbl = stable("".join(srow(s) for s in mine), f'Goleadores del Celta de Vino
 if sum(s["goals"] for s in mine) != GF:
     print(f"AVISO: los goleadores del Celta suman {sum(s['goals'] for s in mine)} y el equipo lleva {GF} goles", file=sys.stderr)
 
-# Broma (solo en el navegador, la hace public/goleadores.js): la primera pulsación en Diego o en Mario
-# les suma un gol a los dos y se lo quita a Pablo (nunca por debajo de 0); solo una vez por visita.
+# Broma (solo en el navegador, la hace public/goleadores.js): pulsar a Diego o a Mario le suma un gol
+# solo a ese jugador y se lo quita a Pablo (nunca por debajo de 0); cada nombre una sola vez por visita.
 # No toca data/liga.json.
 BROMA = {"suman": ["Diego Romero Lopez", "Mario Manglano Redondo"], "resta": "Pablo Manglano Redondo"}
 celta_names = [s["name"] for s in mine]
