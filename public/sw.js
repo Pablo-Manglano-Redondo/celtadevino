@@ -4,7 +4,7 @@
 // - Imágenes e iconos: la copia guardada al instante y se actualiza en segundo plano.
 // - Vídeo y audio (peticiones por rangos) y otros orígenes: no se tocan.
 // Al cambiar la lista de PRECACHE o la estrategia, sube VERSION para limpiar las cachés antiguas.
-const VERSION = "v2";
+const VERSION = "v3";
 const SHELL = "cdv-shell-" + VERSION;
 const IMG = "cdv-img-" + VERSION;
 const OFFLINE = "/offline";
