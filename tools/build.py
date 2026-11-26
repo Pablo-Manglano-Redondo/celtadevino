@@ -228,15 +228,30 @@ def srow(s, cls=""):
     avg = f'{s["goals"] / s["pj"]:.2f}'.replace(".", ",") if s["pj"] else "–"
     return (f'<tr{c}><td class="n">{s["rank"]}</td><th scope="row">{s["name"]}<span class="eq">{nm(s["team"])}</span></th><td class="team">{nm(s["team"])}</td>'
             f'<td class="hm">{s["pj"]}</td><td class="hm">{avg}</td><td class="pt">{s["goals"]}</td></tr>')
-def stable(rows_html, caption):
-    return ('<div class="tw"><table class="tabla gt"><caption>' + caption + '</caption><thead><tr>' + th("#", "Posición en el ranking", "n")
+def stable(rows_html, caption, key):
+    return (f'<div class="tw"><table class="tabla gt" data-goles="{key}"><caption>' + caption + '</caption><thead><tr>' + th("#", "Posición en el ranking", "n")
             + '<th scope="col">Jugador</th><th scope="col" class="team">Equipo</th>' + th("PJ", "Partidos jugados", "hm") + th("Media", "Goles por partido jugado", "hm")
             + th("Goles", "Goles") + '</tr></thead><tbody>' + rows_html + '</tbody></table></div>')
-top = stable("".join(srow(s, "me" if s["team"] == ME else "") for s in sc[:10]), f"Máximos goleadores de la liga · {len(sc)} jugadores han marcado ({TOTAL_G} goles)")
+TOP_N = 10
+top = stable("".join(srow(s, "me" if s["team"] == ME else "") for s in sc[:TOP_N]),
+             f'Máximos goleadores de la liga · <span data-total="jugadores">{len(sc)}</span> jugadores han marcado (<span data-total="liga">{TOTAL_G}</span> goles)', "top")
 mine = [s for s in sc if s["team"] == ME]
-mine_tbl = stable("".join(srow(s) for s in mine), f'Goleadores del Celta de Vino · {sum(s["goals"] for s in mine)} goles')
+mine_tbl = stable("".join(srow(s) for s in mine), f'Goleadores del Celta de Vino · <span data-total="celta">{sum(s["goals"] for s in mine)}</span> goles', "celta")
 if sum(s["goals"] for s in mine) != GF:
     print(f"AVISO: los goleadores del Celta suman {sum(s['goals'] for s in mine)} y el equipo lleva {GF} goles", file=sys.stderr)
+
+# Broma (solo en el navegador, la hace public/goleadores.js): cada pulsación en Diego o en Mario
+# les suma un gol a los dos y se lo quita a Pablo (nunca por debajo de 0). No toca data/liga.json.
+BROMA = {"suman": ["Diego Romero Lopez", "Mario Manglano Redondo"], "resta": "Pablo Manglano Redondo"}
+celta_names = [s["name"] for s in mine]
+if all(celta_names.count(n) == 1 for n in BROMA["suman"] + [BROMA["resta"]]):
+    gdata = {"top": TOP_N, "broma": BROMA,
+             "players": [{"name": s["name"], "team": nm(s["team"]), "me": s["team"] == ME, "pj": s["pj"], "goals": s["goals"], "rank": s["rank"]} for s in sc]}
+    GOLES_DATA = ('<script type="application/json" id="goles-data">'
+                  + json.dumps(gdata, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c") + "</script>")
+else:
+    print("AVISO: no encuentro a Diego, Mario y Pablo (una sola vez cada uno) en los goleadores del Celta; la broma de los goles queda desactivada", file=sys.stderr)
+    GOLES_DATA = ""
 
 def srcnote(extra=""):
     return f'<p class="src">Datos de la <a href="{SRC}" target="_blank" rel="noopener">web oficial de la liga</a> · actualizado el {FETCHED_ES}.{extra}</p>'
@@ -258,6 +273,7 @@ SEC_LIGA = f"""
 <section class="sec" id="goleadores" aria-labelledby="h-gol"><h2 id="h-gol">Goleadores</h2>
 {top}
 {mine_tbl}
+{GOLES_DATA}
 {srcnote()}
 </section>
 """
@@ -414,6 +430,7 @@ page = f'''<!DOCTYPE html>
 <dialog id="visor" aria-label="Visor de fotos"><div class="lb"><img src="/img/escudo.webp" alt=""><p></p>
 <button class="x" type="button" aria-label="Cerrar">×</button><button class="pv" type="button" aria-label="Foto anterior">‹</button><button class="nx" type="button" aria-label="Foto siguiente">›</button></div></dialog>
 <script src="/app.js" defer></script>
+<script src="/goleadores.js" defer></script>
 <script src="/pwa.js" defer></script>
 </body>
 </html>
