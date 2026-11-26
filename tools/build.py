@@ -324,7 +324,12 @@ page = f'''<!DOCTYPE html>
 <link rel="canonical" href="{SITE}/">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Celta de Vino">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_ES">
 <meta property="og:site_name" content="El Celta de Vino">
@@ -409,6 +414,7 @@ page = f'''<!DOCTYPE html>
 <dialog id="visor" aria-label="Visor de fotos"><div class="lb"><img src="/img/escudo.webp" alt=""><p></p>
 <button class="x" type="button" aria-label="Cerrar">×</button><button class="pv" type="button" aria-label="Foto anterior">‹</button><button class="nx" type="button" aria-label="Foto siguiente">›</button></div></dialog>
 <script src="/app.js" defer></script>
+<script src="/pwa.js" defer></script>
 </body>
 </html>
 '''
@@ -417,7 +423,13 @@ open(f"{PUB}/index.html", "w", encoding="utf-8").write(page)
 # ficheros auxiliares
 open(f"{PUB}/robots.txt", "w").write(f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n")
 open(f"{PUB}/sitemap.xml", "w").write(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>{SITE}/</loc><lastmod>2026-11-24</lastmod></url></urlset>\n')
-open(f"{PUB}/404.html", "w", encoding="utf-8").write(f'''<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Fuera de juego · El Celta de Vino</title><meta name="robots" content="noindex"><link rel="icon" href="/favicon.ico"><script src="/theme.js"></script><link rel="stylesheet" href="/style.css"></head>
-<body><div class="w"><h1><a href="/">El Celta de Vino</a></h1><p class="sub">Árbitro, esto es fuera de juego</p><hr class="rule"><p class="c404">Esa página no existe (o se la llevó el VAR). <a href="/">Volver a la portada →</a></p></div></body></html>
-''')
+def mini(title, sub, msg):
+    """Página auxiliar (404, sin conexión) con la misma cabecera, estilos e iconos que la portada."""
+    return f'''<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{title} · El Celta de Vino</title><meta name="robots" content="noindex"><meta name="theme-color" content="#f4efe4" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#1b1715" media="(prefers-color-scheme: dark)"><link rel="icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180"><link rel="manifest" href="/manifest.webmanifest"><script src="/theme.js"></script><link rel="stylesheet" href="/style.css"></head>
+<body><div class="w"><h1><a href="/">El Celta de Vino</a></h1><p class="sub">{sub}</p><hr class="rule"><p class="c404">{msg}</p></div><script src="/pwa.js" defer></script></body></html>
+'''
+open(f"{PUB}/404.html", "w", encoding="utf-8").write(mini("Fuera de juego", "Árbitro, esto es fuera de juego",
+    'Esa página no existe (o se la llevó el VAR). <a href="/">Volver a la portada →</a>'))
+open(f"{PUB}/offline.html", "w", encoding="utf-8").write(mini("Sin conexión", "Partido suspendido por falta de cobertura",
+    'No hay conexión y esta página no está guardada en el dispositivo. <a href="/">Volver a la portada →</a> (la última edición descargada se puede leer sin conexión).'))
 print("ok", len(page))

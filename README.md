@@ -10,6 +10,17 @@ Web estática de https://celtadevino.pages.dev. Lo que se sirve vive en `public/
   clasificación oficial (G/E/P y goles) y que los goleadores del Celta suman sus goles.
 - `public/` (CSS, JS, imágenes, `_headers`…) es estático; no hay build de frontend.
 
+## App instalable (PWA)
+La web se puede instalar en el móvil y en el escritorio ("Añadir a pantalla de inicio" / "Instalar").
+- `public/manifest.webmanifest`: nombre, colores e iconos (`icon-192/512.png` y los *maskable*
+  `icon-maskable-192/512.png`, que se regeneran desde el escudo con `python3 -I tools/icons.py`).
+- `public/sw.js` (lo registra `public/pwa.js` en todas las páginas): HTML, CSS y JS van **primero a la
+  red** (los datos de la liga siempre salen frescos) y sin conexión se sirve la última copia; si no hay
+  copia, la página `/offline` (la genera `build.py`). Las imágenes se sirven desde la caché y se
+  refrescan en segundo plano; vídeo y audio no se cachean.
+- Si cambias la lista `PRECACHE` o la estrategia de `sw.js`, sube `VERSION` para limpiar las cachés viejas.
+- `_headers` sirve `sw.js` y el manifest con `Cache-Control: no-cache` y su `Content-Type` correcto.
+
 ## Comandos
 - `npm run sync`   → refresca los datos de la liga y regenera la página.
 - `npm run build`  → regenera la página con los datos que ya hay.
