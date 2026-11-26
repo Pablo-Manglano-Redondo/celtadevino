@@ -38,7 +38,9 @@ async function networkFirst(event, isPage) {
   const cache = await caches.open(SHELL);
   try {
     const res = await fetch(request);
-    if (cacheable(res)) event.waitUntil(cache.put(request, res.clone()));
+    // Las páginas se guardan sin la query (?fbclid=…) para no acumular una copia por enlace.
+    const key = isPage ? new URL(request.url).pathname : request;
+    if (cacheable(res)) event.waitUntil(cache.put(key, res.clone()).catch(() => {}));
     return res;
   } catch (err) {
     const hit = await cache.match(request, { ignoreSearch: isPage });
@@ -52,7 +54,7 @@ async function staleWhileRevalidate(event) {
   const cache = await caches.open(IMG);
   const hit = await caches.match(event.request); // también las precargadas en SHELL
   const update = fetch(event.request).then((res) => {
-    if (cacheable(res)) return cache.put(event.request, res.clone()).then(() => res);
+    if (cacheable(res)) return cache.put(event.request, res.clone()).catch(() => {}).then(() => res);
     return res;
   });
   if (hit) {
