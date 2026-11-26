@@ -1,5 +1,6 @@
-// Broma de la tabla de goleadores: Diego y Mario son pulsables. Cada pulsación les suma un gol
-// a los dos y se lo quita a Pablo (nunca por debajo de 0), y la tabla se reordena.
+// Broma de la tabla de goleadores: Diego y Mario son pulsables. La primera pulsación les suma un
+// gol a los dos y se lo quita a Pablo (nunca por debajo de 0), y la tabla se reordena. Solo
+// funciona una vez: después dejan de ser pulsables y no se suma ni se resta nada más.
 // Todo pasa en el navegador de quien la visita: no se guarda nada y se reinicia al recargar.
 // Los datos los escribe tools/build.py en <script type="application/json" id="goles-data">.
 (function () {
@@ -16,6 +17,7 @@
   var pablo = byName[broma.resta];
   if (suman.length !== broma.suman.length || !pablo) return;
 
+  var usada = false; // la broma solo se puede hacer una vez por visita
   var tables = {};
   [].forEach.call(sec.querySelectorAll("table[data-goles]"), function (t) { tables[t.getAttribute("data-goles")] = t; });
   if (!tables.top || !tables.celta) return;
@@ -39,7 +41,7 @@
     tr.appendChild(td("n", p.pos));
     var th = document.createElement("th");
     th.scope = "row";
-    if (suman.indexOf(p.name) >= 0) {
+    if (!usada && suman.indexOf(p.name) >= 0) {
       var b = document.createElement("button");
       b.type = "button";
       b.className = "broma";
@@ -103,15 +105,17 @@
   sec.addEventListener("click", function (e) {
     var b = e.target.closest("button.broma");
     if (!b) return;
+    if (usada) return;
+    usada = true;
     var tabla = b.closest("table").getAttribute("data-goles"), quien = b.getAttribute("data-jugador");
     suman.forEach(function (n) { byName[n].goals += 1; });
     if (pablo.goals > 0) pablo.goals -= 1;
-    pintar();
-    // La fila se ha vuelto a pintar: devuelve el foco al mismo botón para poder seguir con el teclado.
-    var otra = [].filter.call(tables[tabla].querySelectorAll("button.broma"), function (x) {
-      return x.getAttribute("data-jugador") === quien;
+    pintar(); // ya sin botones: los nombres vuelven a ser texto normal
+    // El botón ha desaparecido: deja el foco en la misma celda para no perder el sitio con el teclado.
+    var celda = [].filter.call(tables[tabla].querySelectorAll("th[scope=row]"), function (x) {
+      return x.firstChild && x.firstChild.nodeValue === quien;
     })[0];
-    if (otra) otra.focus({ preventScroll: true });
+    if (celda) { celda.tabIndex = -1; celda.focus({ preventScroll: true }); }
     avisar("¡Pablo ladrón!");
   });
 
